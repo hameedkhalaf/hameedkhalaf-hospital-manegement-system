@@ -30,7 +30,7 @@ Route::middleware(['auth:admin'])->group(function () {
     //Department Section
 Route::resource('admin/sections', SectionController::class);
 //Doctors Section
-Route::resource('admin/sections', DoctorController::class);
+Route::resource('admin/doctors', DoctorController::class);
 });
 require __DIR__.'/auth.php';
 });
