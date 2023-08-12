@@ -8,7 +8,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="{{ route('Sections.store') }}" method="post" autocomplete="off">
+            <form action="{{ route('sections.store') }}" method="post" autocomplete="off">
                 @csrf
                 <div class="modal-body">
                     <label for="exampleInputPassword1">{{ trans('Dashboard/departments.name_sections') }}</label>

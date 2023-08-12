@@ -9,5 +9,8 @@ return [
     'password' =>'Password',
     'email_hint' =>'Enter your Email',
     'password_hint' =>'Enter your password',
+     'brand1'=>'Hameed',
+     'brand2'=>'Hospital',
+    'brand3'=>'',
 
 ];

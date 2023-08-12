@@ -9,7 +9,10 @@ return [
     'email' =>' الايميل',
     'password' =>' كلمة المرور',
     'email_hint' =>' ادخل الايميل' ,
-    'password_hint' =>' ادخل كلمة المرور'
+    'password_hint' =>' ادخل كلمة المرور',
+    'brand2'=>'حميد ',
+     'brand1'=>'  مستشفى  ',
+    'brand3'=>'',
 
 
 

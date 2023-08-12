@@ -25,13 +25,26 @@
                             <div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
                                 <div class="card-sigin">
                                     <div class="mb-5 d-flex"> <a href="{{ url('/' . ($page = 'index')) }}"><img
-                                                src="{{ URL::asset('assets/img/brand/favicon.png') }}"
+                                                src="{{ URL::asset('assets/img/brand/favicon4.png') }}"
                                                 class="sign-favicon ht-40" alt="logo"></a>
-                                        <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Hameed<span>Cor.</span>x</h1>
+                                        <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">
+                                            {{ trans('Dashboard/login_trans.brand1') }}<span
+                                                style="color: blue ; padding:5px">{{ trans('Dashboard/login_trans.brand2') }}</span>{{ trans('Dashboard/login_trans.brand3') }}
+                                        </h1>
                                     </div>
                                     <div class="card-sigin">
                                         <div class="main-signup-header">
                                             <h2>{{ trans('Dashboard/login_trans.as_admin') }}</h2>
+
+                                            @if ($errors->any())
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
 
                                             <form method="POST" action="{{ route('admin.store') }}">
                                                 @csrf

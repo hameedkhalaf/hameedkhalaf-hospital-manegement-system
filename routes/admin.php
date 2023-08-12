@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\SectionController;
 
 Route::group(
     [
@@ -23,14 +24,16 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'auth:admin
     Route::post('logout', [LoginController::class, 'destroy'])->name('admin.logout');
 
     //Department Section
-    Route::get('section', [DashboardController::class, 'test'])->name('section.index');
-    //Route::get('section', [DashboardController::class, 'index'])->name('section.index');
+    //, 'index'])->name('section.index');
+    //Route::post('section', [DashboardController::class, 'store'])->name('section.store');
     //Route::get('section', [DashboardController::class, 'index'])->name('section.index');
     //Route::get('section', [DashboardController::class, 'index'])->name('section.index');
     
-
+//Route::resource('sections', SectionController::class);
 });
-
+Route::middleware(['auth:admin'])->group(function () {
+Route::resource('admin/sections', SectionController::class);
+});
 require __DIR__.'/auth.php';
 });
 

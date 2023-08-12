@@ -9,7 +9,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="{{ route('Sections.update', 'test') }}" method="post">
+            <form action="{{ route('sections.update', 'test') }}" method="post">
                 {{ method_field('patch') }}
                 {{ csrf_field() }}
                 @csrf

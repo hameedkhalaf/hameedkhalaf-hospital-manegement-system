@@ -3,7 +3,7 @@
 <aside class="app-sidebar sidebar-scroll">
     <div class="main-sidebar-header active">
         <a class="desktop-logo logo-light active" href="{{ url('/' . ($page = 'index')) }}"><img
-                src="{{ URL::asset('assets/img/brand/logo.png') }}" class="main-logo" alt="logo"></a>
+                src="{{ URL::asset('assets/img/brand/logo1.png') }}" class="main-logo" alt="logo"></a>
         <a class="desktop-logo logo-dark active" href="{{ url('/' . ($page = 'index')) }}"><img
                 src="{{ URL::asset('assets/img/brand/logo-white.png') }}" class="main-logo dark-theme"
                 alt="logo"></a>
@@ -52,7 +52,7 @@
                         class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
                     <li><a class="slide-item"
-                            href="{{ route('section.index') }}">{{ trans('Dashboard/main-sidebar_trans.show_all') }}</a>
+                            href="{{ route('sections.index') }}">{{ trans('Dashboard/main-sidebar_trans.show_all') }}</a>
                     </li>
                     <li><a class="slide-item" href="{{ url('/' . ($page = 'chart-flot')) }}">Flot Charts</a></li>
                     <li><a class="slide-item" href="{{ url('/' . ($page = 'chart-chartjs')) }}">ChartJS</a></li>

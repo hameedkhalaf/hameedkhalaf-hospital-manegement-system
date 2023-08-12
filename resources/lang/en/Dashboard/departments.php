@@ -7,7 +7,7 @@ return [
     'delete_sections'=>'Delete Sections',
     'created_at'=>'Created_at',
     'Processes'=>'Processes',
-    'submit'=>'Submit',
+    'submit'=>'Save',
     'Close'=>'Close',
     'Warning'=>'Are Sure Of The Deleting Process ?',
     

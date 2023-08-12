@@ -25,13 +25,24 @@
                             <div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
                                 <div class="card-sigin">
                                     <div class="mb-5 d-flex"> <a href="{{ url('/' . ($page = 'index')) }}"><img
-                                                src="{{ URL::asset('assets/img/brand/favicon.png') }}"
+                                                src="{{ URL::asset('assets/img/brand/favicon4.png') }}"
                                                 class="sign-favicon ht-40" alt="logo"></a>
                                         <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Hameed<span>Hospital</span> </h1>
                                     </div>
                                     <div class="card-sigin">
                                         <div class="main-signup-header">
                                             <h2>{{ trans('Dashboard/login_trans.welcome') }}</h2>
+
+                                            @if ($errors->any())
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
+
                                             <h5 class="font-weight-semibold mb-4">
                                                 {{ trans('Dashboard/login_trans.Please_sign_in_to_continue') }}</h5>
                                             <form method="POST" action="{{ route('login') }}">
