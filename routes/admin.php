@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SectionController;
+use App\Http\Controllers\Admin\DoctorController;
 
 Route::group(
     [
@@ -23,16 +24,13 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'auth:admin
     Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::post('logout', [LoginController::class, 'destroy'])->name('admin.logout');
 
-    //Department Section
-    //, 'index'])->name('section.index');
-    //Route::post('section', [DashboardController::class, 'store'])->name('section.store');
-    //Route::get('section', [DashboardController::class, 'index'])->name('section.index');
-    //Route::get('section', [DashboardController::class, 'index'])->name('section.index');
     
-//Route::resource('sections', SectionController::class);
 });
 Route::middleware(['auth:admin'])->group(function () {
+    //Department Section
 Route::resource('admin/sections', SectionController::class);
+//Doctors Section
+Route::resource('admin/sections', DoctorController::class);
 });
 require __DIR__.'/auth.php';
 });

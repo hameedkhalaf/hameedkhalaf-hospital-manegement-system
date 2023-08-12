@@ -21,7 +21,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
                         data-dismiss="modal">{{ trans('Dashboard/departments.Close') }}</button>
-                    <button type="submit" class="btn btn-primary">{{ trans('Dashboard/departments.submit') }}</button>
+                    <button type="submit" class="btn btn-primary">{{ trans('Dashboard/departments.update') }}</button>
                 </div>
             </form>
         </div>

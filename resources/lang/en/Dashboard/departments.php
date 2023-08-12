@@ -8,6 +8,8 @@ return [
     'created_at'=>'Created_at',
     'Processes'=>'Processes',
     'submit'=>'Save',
+    'update' => 'Update',
+    'delete' => 'Delete',
     'Close'=>'Close',
     'Warning'=>'Are Sure Of The Deleting Process ?',
     

@@ -8,7 +8,9 @@ return [
     'delete_sections'=>'حذف قسم',
     'created_at'=>'تاريخ الاضافة',
     'Processes'=>'العمليات',
-    'submit'=>'تاكيد',
+    'submit'=>'إضافة',
+    'update' => 'تعديل',
+    'delete' => 'حذف',
     'Close'=>'اغلاق',
     'Warning'=>'هل انت متاكد من عملية الحذف ؟',
 
