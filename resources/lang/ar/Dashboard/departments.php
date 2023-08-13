@@ -4,6 +4,7 @@ return [
 
     'add_sections'=>'اضافة قسم',
     'name_sections'=>'اسم القسم',
+    'description'=>'وصف القسم',
     'edit_sections'=>'تعديل قسم',
     'delete_sections'=>'حذف قسم',
     'created_at'=>'تاريخ الاضافة',

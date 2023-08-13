@@ -3,6 +3,7 @@
 return [
     'add_sections'=>'Add Sections',
     'name_sections'=>'Name Sections',
+    'section_description'=>' Description',
     'edit_sections'=>'Edit Sections',
     'delete_sections'=>'Delete Sections',
     'created_at'=>'Created_at',

@@ -7,6 +7,9 @@ return [
     'sections'=>'الاقسام',
     'show_all' => 'عرض الكل',
     'general' => 'عام',
+    'doctors' => 'الاطباء',
+    'index' => 'الرئيسية',
+    'sections' => 'الاقسام',
 
 
 

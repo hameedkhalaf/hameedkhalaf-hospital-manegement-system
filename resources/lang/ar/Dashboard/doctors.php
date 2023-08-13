@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'doctors' => 'الأطباء',
+  'show_all' => ' إضافة',
+  'show_all' => 'عرض الكل',
+  'Enabled' => 'مفعل',
+  'Not_enabled' => 'غير مفعل',
+  'Processes' => 'العمليات',
+  'Status' => 'الحالة',
+  'add_doctor' => 'اضافة طبيب',
+  'appointments' => 'المواعيد',
+  'created_at' => 'تاريخ الاضافة',
+  'img' => 'صورة الطبيب',
+  'email' => 'البريد الالكتروني',
+  'name' => 'اسم الطبيب',
+  'password' => 'كلمة المرور',
+  'phone' => 'رقم الهاتف',
+  'price' => 'سعر الكشف',
+  'section' => 'القسم',
+  'close' => 'إغلاق',
+  'submit'=>'إضافة',
+    'update' => 'تعديل',
+    'delete' => 'حذف',
+    'close'=>'اغلاق',
+    'warning'=>'هل انت متاكد من عملية الحذف ؟',
+    'delete_doctor'=>'حذف دكتور ',
+);

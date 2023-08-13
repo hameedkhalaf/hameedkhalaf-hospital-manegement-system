@@ -1,0 +1,27 @@
+<?php
+
+return array (
+  'Add' => 'Add',
+  'doctors' => 'Doctors',
+  'show_all' => 'Show All',
+  'Enabled' => 'Enabled',
+  'Not_enabled' => 'Not_enabled',
+  'Processes' => 'Processes',
+  'Status' => 'Status',
+  'add_doctor' => 'Add Doctor',
+  'appointments' => 'appointments',
+  'created_at' => 'created_at',
+  'img' => 'Doctor Photo',
+  'email' => 'Email',
+  'name' => 'Doctor Name',
+  'password' => 'password',
+  'phone' => 'phone',
+  'price' => 'price',
+  'section' => 'Section',
+  'submit' => 'submit',
+  'close' => 'Close',
+  'delete' => 'Delete',
+  'update' => 'Update',
+  'warning'=>'Are Sure Of The Deleting Process ?',
+  'delete_doctor'=>'Delete Doctor',
+);

@@ -7,6 +7,9 @@ return [
     'sections'=>'Departments',
     'show_all' => 'Show All',
     'general' => 'General',
+    'doctors' => 'Doctors',
+    'index' => 'Home',
+    'sections' => 'Sections',
 
 
 ];

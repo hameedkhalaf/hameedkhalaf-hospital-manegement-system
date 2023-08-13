@@ -4,26 +4,34 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Doctor;
+use App\Interfaces\Doctors\DoctorRepositoryInterface;
 
 class DoctorController extends Controller
 {
+    private $Doctors;
+
+    public function __construct(DoctorRepositoryInterface $Doctors)
+    {
+        $this->Doctors = $Doctors;
+    }
+
+
     public function index()
     {
-        $doctors = Doctor::find(22);
-
-        dd($doctors->image);
+        return $this->Doctors->index();
     }
 
 
     public function create()
     {
-        //
+        return $this->Doctors->create();
     }
 
 
     public function store(Request $request)
     {
-        //
+        return $this->Doctors->store($request);
     }
 
 
@@ -45,8 +53,8 @@ class DoctorController extends Controller
     }
 
 
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        return $this->Doctors->destroy($request);
     }
 }
