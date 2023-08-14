@@ -9,8 +9,11 @@ return [
     'password' =>'Password',
     'email_hint' =>'Enter your Email',
     'password_hint' =>'Enter your password',
-     'brand1'=>'Hameed',
-     'brand2'=>'Hospital',
+    'brand1'=>'Hameed',
+    'brand2'=>'Hospital',
     'brand3'=>'',
+    'forget_password'=> 'Forgot password?',
+    'create_an_account' => 'Create an Account',
+    'dont_have_an_account' => 'Don\'t have an account?',
 
 ];

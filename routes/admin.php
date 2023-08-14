@@ -31,6 +31,8 @@ Route::middleware(['auth:admin'])->group(function () {
 Route::resource('admin/sections', SectionController::class);
 //Doctors Section
 Route::resource('admin/doctors', DoctorController::class);
+Route::post('/admin/doctors/update_password', [DoctorController::class, 'update_password'])->name('doctors.update_password');
+Route::post('/admin/doctors/update_status', [DoctorController::class, 'update_status'])->name('doctors.update_status');
 });
 require __DIR__.'/auth.php';
 });

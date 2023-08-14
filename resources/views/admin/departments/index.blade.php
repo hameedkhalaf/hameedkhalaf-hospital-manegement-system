@@ -47,7 +47,7 @@
                                     <th class="wd-15p border-bottom-0">#</th>
                                     <th class="wd-15p border-bottom-0">
                                         {{ trans('Dashboard/departments.name_sections') }}</th>
-                                        <th class="wd-15p border-bottom-0">
+                                    <th class="wd-15p border-bottom-0">
                                         {{ trans('Dashboard/departments.section_description') }}</th>
                                     <th class="wd-20p border-bottom-0">{{ trans('Dashboard/departments.created_at') }}
                                     </th>
@@ -59,7 +59,8 @@
                                 @foreach ($sections as $section)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $section->name }}</td>
+                                        <td><a href="{{ route('sections.show', $section->id) }}">{{ $section->name }}</a>
+                                        </td>
                                         <td>{{ \Str::limit($section->description, 50) }}</td>
                                         <td>{{ $section->created_at->diffForHumans() }}</td>
                                         <td>

@@ -13,6 +13,9 @@ return [
     'brand2'=>'حميد ',
      'brand1'=>'  مستشفى  ',
     'brand3'=>'',
+     'forget_password'=> 'هل نسيت كلمة المرور؟',
+     'create_an_account' => 'إنشاء حساب     ',
+     'dont_have_an_account' => ' هل تملك حساب؟',
 
 
 

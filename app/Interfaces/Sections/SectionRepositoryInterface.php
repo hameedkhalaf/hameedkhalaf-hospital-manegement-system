@@ -17,4 +17,7 @@ interface SectionRepositoryInterface
     // destroy Sections
     public function destroy($request);
 
+    //show all doctors belong to section
+    public function show($id);
+
 }

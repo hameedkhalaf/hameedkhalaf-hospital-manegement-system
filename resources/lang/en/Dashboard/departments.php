@@ -13,6 +13,7 @@ return [
     'delete' => 'Delete',
     'Close'=>'Close',
     'Warning'=>'Are Sure Of The Deleting Process ?',
+    'section_doctors'=>' Section\'s Doctors',
     
 
 ];

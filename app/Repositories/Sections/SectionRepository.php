@@ -3,6 +3,7 @@ namespace App\Repositories\Sections;
 
 use App\Interfaces\Sections\SectionRepositoryInterface;
 use App\Models\Section;
+use App\Models\Doctor;
 
 class SectionRepository implements SectionRepositoryInterface
 {
@@ -39,6 +40,12 @@ class SectionRepository implements SectionRepositoryInterface
         Section::findOrFail($request->id)->delete();
         session()->flash('delete');
         return redirect()->route('sections.index');
+    }
+    public function show($id)
+    {
+        $doctors =Section::findOrFail($id)->doctors;
+        $section = Section::findOrFail($id);
+        return view('admin.departments.show_doctors',compact('doctors','section'));
     }
 
 }

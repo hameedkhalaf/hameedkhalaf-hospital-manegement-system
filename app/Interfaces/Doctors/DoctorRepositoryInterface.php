@@ -4,7 +4,7 @@ namespace App\Interfaces\Doctors;
 
 interface DoctorRepositoryInterface
 {
-    // get Doctor
+   // get Doctor
     public function index();
 
     // create Doctor
@@ -18,5 +18,14 @@ interface DoctorRepositoryInterface
 
     // destroy Doctor
     public function destroy($request);
+
+    // destroy Doctor
+    public function edit($id);
+
+    // update_password
+    public function update_password($request);
+
+    // update_status
+    public function update_status($request);
 
 }

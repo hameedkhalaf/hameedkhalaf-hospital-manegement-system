@@ -69,14 +69,13 @@
                                                     @enderror
                                                 </div>
                                                 <button class="btn btn-main-primary btn-block"
-                                                    type="submit">{{ trans('Dashboard/login_trans.email') }}</button>
+                                                    type="submit">{{ trans('Dashboard/login_trans.sign_in') }}</button>
 
                                             </form>
                                             <div class="main-signin-footer mt-5">
-                                                <p><a href="">Forgot password?</a></p>
-                                                <p>Don't have an account? <a
-                                                        href="{{ url('/' . ($page = 'register')) }}">Create
-                                                        an Account</a></p>
+                                                <p><a href="">{{ trans('Dashboard/login_trans.forget_password') }}</a></p>
+                                                <p>{{ trans('Dashboard/login_trans.create_an_account') }} <a
+                                                        href="{{ url('/' . ($page = 'register')) }}">{{ trans('Dashboard/login_trans.dont_have_an_account') }}</a></p>
                                             </div>
                                         </div>
                                     </div>

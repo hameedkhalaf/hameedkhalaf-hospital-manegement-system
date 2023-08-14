@@ -10,8 +10,8 @@ class Doctor extends Model
 {
     use Translatable;
     use HasFactory;
-    public $translatedAttributes = ['name','appointments'];
-    public $fillable= ['email','email_verified_at','password','phone','price','name', 'section_id','appointments'];
+    public $translatedAttributes = ['name', 'appointments'];
+    public $fillable= ['email','email_verified_at','password','phone','name', 'section_id','status'];
     public function image()
     {
         return $this->morphOne(Image::class, 'imageable');
@@ -20,5 +20,10 @@ class Doctor extends Model
     public function section()
     {
         return $this->belongsTo(Section::class);
+    }
+
+    public function doctorappointments()
+    {
+        return $this->belongsToMany(Appointment::class,'appointment_doctor');
     }
 }
