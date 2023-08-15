@@ -17,6 +17,8 @@
                     <label for="exampleInputPassword1">{{ trans('Dashboard/departments.name_sections') }}</label>
                     <input type="hidden" name="id" value="{{ $section->id }}">
                     <input type="text" name="name" value="{{ $section->name }}" class="form-control">
+                    <label for="exampleInputPassword1">{{ trans('Dashboard/departments.description') }}</label>
+                    <input type="text" name="description" value="{{ $section->description }}" class="form-control">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"

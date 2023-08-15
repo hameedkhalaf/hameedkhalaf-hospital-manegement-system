@@ -15,5 +15,7 @@ return [
     'Close'=>'اغلاق',
     'Warning'=>'هل انت متاكد من عملية الحذف ؟',
     'section_doctors'=>'دكاترة القسم',
+    'description'=> 'الوصف',
+    'section' => 'الأقسام',
 
 ];

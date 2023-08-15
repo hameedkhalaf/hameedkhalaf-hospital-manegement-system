@@ -34,7 +34,7 @@ Route::resource('admin/doctors', DoctorController::class);
 Route::post('/admin/doctors/update_password', [DoctorController::class, 'update_password'])->name('doctors.update_password');
 Route::post('/admin/doctors/update_status', [DoctorController::class, 'update_status'])->name('doctors.update_status');
  Route::resource('/admin/services', SingleServiceController::class);
-
+ Route::view('/admin/Add_GroupServices','livewire.GroupServices.include_create')->name('Add_GroupServices');
 });
 require __DIR__.'/auth.php';
 });
