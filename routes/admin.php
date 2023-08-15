@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SectionController;
 use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\SingleServiceController;
+use App\Http\Controllers\Admin\InsuranceController;
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -33,8 +34,13 @@ Route::resource('admin/sections', SectionController::class);
 Route::resource('admin/doctors', DoctorController::class);
 Route::post('/admin/doctors/update_password', [DoctorController::class, 'update_password'])->name('doctors.update_password');
 Route::post('/admin/doctors/update_status', [DoctorController::class, 'update_status'])->name('doctors.update_status');
- Route::resource('/admin/services', SingleServiceController::class);
- Route::view('/admin/Add_GroupServices','livewire.GroupServices.include_create')->name('Add_GroupServices');
+
+Route::resource('/admin/services', SingleServiceController::class);
+
+
+Route::view('/admin/Add_GroupServices','livewire.GroupServices.include_create')->name('Add_GroupServices');
+
+Route::resource('/admin/insurances', InsuranceController::class);
 });
 require __DIR__.'/auth.php';
 });

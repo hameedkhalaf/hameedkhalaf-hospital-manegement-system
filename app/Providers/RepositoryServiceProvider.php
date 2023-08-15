@@ -9,6 +9,8 @@ use App\Interfaces\Doctors\DoctorRepositoryInterface;
 use App\Repositories\Doctors\DoctorRepository;
 use App\Interfaces\Services\SingleServiceRepositoryInterface;
 use App\Repositories\Services\SingleServiceRepository;
+use App\Interfaces\Insurances\InsuranceRepositoryInterface;
+use App\Repositories\Insurances\InsuranceRepository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
@@ -20,6 +22,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(SectionRepositoryInterface::class, SectionRepository::class);
         $this->app->bind(DoctorRepositoryInterface::class, DoctorRepository::class);
         $this->app->bind(SingleServiceRepositoryInterface::class, SingleServiceRepository::class);
+        $this->app->bind(InsuranceRepositoryInterface::class, InsuranceRepository::class);
     }
 
     /**

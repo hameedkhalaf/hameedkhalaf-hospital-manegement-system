@@ -94,7 +94,7 @@
                             href="{{ route('Add_GroupServices') }}">{{ trans('main-sidebar_trans.group_services') }}</a>
                     </li>
                     <li><a class="slide-item"
-                            href="{{ url('/' . ($page = 'contacts')) }}">{{ trans('main-sidebar_trans.insurance') }}</a>
+                            href="{{ route('insurances.index') }}">{{ trans('main-sidebar_trans.insurance') }}</a>
                     </li>
                     <li><a class="slide-item"
                             href="{{ url('/' . ($page = 'rangeslider')) }}">{{ trans('main-sidebar_trans.ambulance') }}</a>
