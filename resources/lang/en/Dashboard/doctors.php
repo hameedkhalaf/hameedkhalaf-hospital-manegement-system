@@ -37,4 +37,5 @@ return array (
     'status' => 'Status',
     'change_status_for' => 'Change Status for : ',
      'choose_status' => 'Choose Status... ',
+     'update_doctor'=> 'Update Doctor',
 );

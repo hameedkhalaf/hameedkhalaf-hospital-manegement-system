@@ -38,4 +38,5 @@ return array (
     'status' => 'الحالة',
     'choose_status' => 'إختر حالة',
     'change_status_for' => 'تغيير الحالة ل: ',
+    'update_doctor'=> 'تعديل بيانات طبيب',
 );
